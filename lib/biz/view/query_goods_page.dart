@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class QueryGoodsPage extends StatefulWidget {
@@ -16,13 +15,11 @@ class _QueryGoodsPageState extends State<QueryGoodsPage> {
 
   void _onRefresh() async {
     await Future.delayed(Duration(milliseconds: 1000));
-    Fluttertoast.showToast(msg: "下拉刷新");
     _refreshController.refreshCompleted();
   }
 
   void _onLoading() async {
     await Future.delayed(Duration(milliseconds: 1000));
-    Fluttertoast.showToast(msg: "上拉加载更多");
     _refreshController.loadComplete();
   }
 
@@ -140,7 +137,6 @@ class _QueryGoodsPageState extends State<QueryGoodsPage> {
           ),
         ),
         onTap: () {
-          Fluttertoast.showToast(msg: "点击了item");
         });
   }
 
@@ -167,7 +163,6 @@ class _QueryGoodsPageState extends State<QueryGoodsPage> {
                   border: InputBorder.none,
                   hintText: "名称|规格|型号|条码"),
               onSubmitted: (value) {
-                Fluttertoast.showToast(msg: "搜索" + value);
               },
             ),
           ),
@@ -178,7 +173,6 @@ class _QueryGoodsPageState extends State<QueryGoodsPage> {
               color: Colors.grey[500],
             ),
             onPressed: () {
-              Fluttertoast.showToast(msg: "扫描");
             },
           ),
         ],
@@ -211,10 +205,8 @@ class _QueryGoodsPageState extends State<QueryGoodsPage> {
       onSelected: (String result) {
         switch (result) {
           case "1":
-            Fluttertoast.showToast(msg: "分类");
             break;
           case "2":
-            Fluttertoast.showToast(msg: "品牌");
             break;
         }
       },

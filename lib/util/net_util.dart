@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:module_flutter/biz/constant/Api.dart';
+import 'package:module_flutter/biz/constant/api.dart';
 
 class NetUtil {
   static const String GET = "get";

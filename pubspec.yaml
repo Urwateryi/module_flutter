@@ -14,7 +14,6 @@ dependencies:
 
   dio: ^2.1.13  #latest version
   json_annotation: ^3.0.0
-  fluttertoast: ^3.1.0
   pull_to_refresh: ^1.5.4
 
 dev_dependencies:
