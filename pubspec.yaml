@@ -12,9 +12,10 @@ dependencies:
 
   cupertino_icons: ^0.1.2
 
-  dio: ^2.1.13  #latest version
+  dio: ^2.1.13
   json_annotation: ^3.0.0
   pull_to_refresh: ^1.5.4
+  rxdart: ^0.22.1+1
 
 dev_dependencies:
   flutter_test:
